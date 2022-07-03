@@ -16,4 +16,5 @@ ALLOWED_ORIGIN_production = "eg. https://ironsource-assignment.vercel.app";
 
 After setting the above, you can start the server.
 
-Live result -> https://ironsource-assignment.vercel.app/
+Go Live -> https://ironsource-assignment.vercel.app/
+FrontEnd Repo -> https://github.com/julius-ek-hub/ironsource-assignment/
