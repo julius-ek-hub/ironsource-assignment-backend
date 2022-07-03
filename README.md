@@ -10,8 +10,6 @@ NODE_ENV = "eg. development";
 DB_CONNECTION_STRING_development =
 	"eg. mongodb://localhost/ironsource_assignment";
 DB_CONNECTION_STRING_production = "eg. mongodb+srv://user.blablaba/...";
-ALLOWED_ORIGIN_development = "eg. http://localhost:3000";
-ALLOWED_ORIGIN_production = "eg. https://ironsource-assignment.vercel.app";
 ```
 
 After setting the above, you can start the server.
