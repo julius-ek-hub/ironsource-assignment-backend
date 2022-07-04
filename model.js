@@ -4,7 +4,10 @@ const schema = (obj) => new mongoose.Schema(obj);
 
 const contactsSchema = schema({
 	name: schema({
-		title: { type: String, enum: ["Mr", "Miss", "Mrs"] },
+		title: {
+			type: String,
+			enum: ["Mr", "Ms", "Mrs", "Monsieur", "Miss", "Madame", "Mademoiselle"],
+		},
 		first: String,
 		last: String,
 	}),

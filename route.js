@@ -37,6 +37,17 @@ Router.post("/", async (req, res) => {
 	}
 });
 
+Router.put("/", async ({ body }, res) => {
+	try {
+		const updated = await Contact.findByIdAndUpdate(body._id, body, {
+			new: true,
+		});
+		res.send(transformDOBToContainAge(updated));
+	} catch (e) {
+		res.status(500).end("Internal server error");
+	}
+});
+
 Router.delete("/:id", async (req, res) => {
 	try {
 		const _id = req.params.id;
